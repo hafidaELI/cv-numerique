@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="public/assets/css/style.css">
     <link rel="stylesheet" href="public/assets/css/animations.css">
+    <link rel="stylesheet" href="public/assets/css/sections.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="public/assets/img/hei-logo.png" alt="Logo de Hafida EL IDRISSI" class="logo rounded">
+                <img src="public/assets/img/about/hei-logo.png" alt="Logo de Hafida EL IDRISSI" class="logo rounded">
             </a>
 
             <!-- Desktop Menu -->
@@ -60,7 +61,8 @@
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="public/assets/img/hei-logo.png" alt="Logo de Hafida EL IDRISSI" class="logo rounded">
+                    <img src="public/assets/img/about/hei-logo.png" alt="Logo de Hafida EL IDRISSI"
+                        class="logo rounded">
                 </a>
 
                 <!-- Contact -->
@@ -100,12 +102,13 @@
         <section class="hero-section">
             <!-- Image d'accueil -->
             <div class="hero-image">
-                <img src="public/assets/img/background-img-2.png" alt="Fond d'accueil pour le CV de Hafida EL IDRISSI">
+                <img src="public/assets/img/about/background-img-2.png"
+                    alt="Fond d'accueil pour le CV de Hafida EL IDRISSI">
             </div>
 
             <!-- Photo de profil au centre -->
             <div class="profile-container">
-                <img src="public/assets/img/profile-img.jpg" alt="Photo de profil de Hafida EL IDRISSI"
+                <img src="public/assets/img/about/profile-img.jpg" alt="Photo de profil de Hafida EL IDRISSI"
                     class="my-profile-pic">
             </div>
 
@@ -160,19 +163,19 @@
                             <ul>
                                 <li>
                                     <div class="icon-container">
-                                        <img src="public/assets/img/car.jpg" alt="Permis">
+                                        <img src="public/assets/img/about/car.jpg" alt="Permis">
                                     </div>
                                     Permis B et véhicule
                                 </li>
                                 <li>
                                     <div class="icon-container">
-                                        <img src="public/assets/img/callnow.jpg" alt="Disponibilité">
+                                        <img src="public/assets/img/about/callnow.jpg" alt="Disponibilité">
                                     </div>
                                     <span>Disponible dès maintenant</span>
                                 </li>
                                 <li>
                                     <div class="icon-container">
-                                        <img src="public/assets/img/poterie.jpg" alt="Hobby">
+                                        <img src="public/assets/img/about/poterie.jpg" alt="Hobby">
                                     </div>
                                     Pratique la céramique
                                 </li>
@@ -291,15 +294,168 @@
                 </div>
             </section>
 
-            <section id="experience" class="content-section p-4">
+            <section id="experience" class="content-section p-4 mb-4">
                 <h3>Expériences</h3>
-                <!-- Ajouter vos expériences ici -->
+                <div class="experience-list">
+                    <div class="experience-item fade-in">
+                        <div class="experience-logo">
+                            <img src="public/assets/img/logos/cmne.png" alt="Crédit Mutuel">
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h4>Conseillère gestionnaire de clientèle de particulier </h4>
+                                <p class="experience-company">Crédit Mutuel Nord Europe - CDI</p>
+                                <div class="experience-details">
+                                    <span class="experience-date">Sept. 2015 - Févr. 2024</span>
+                                    <span class="experience-location">Amiens, Hauts-de-France, France </span>
+                                </div>
+                            </div>
+                            <ul class="experience-tasks">
+                                <li>Relation Client : Accompagnement personnalisé et gestion d’un portefeuille de
+                                    particuliers, analyse des besoins, et offre de solutions adaptées.</li>
+                                <li>Développement Commercial : Commercialisation de produits bancaires (épargne,
+                                    crédits) et d’assurances (prévoyance, biens, santé). Mise en place et suivi de
+                                    challenges commerciaux (crédit, prévoyance).</li>
+                                <li>Gestion Opérationnelle : Montage de dossiers et financements personnalisés, suivi
+                                    rigoureux des contrats et opérations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="realisations" class="content-section p-4">
+            <section id="realisations" class="content-section p-4 mb-4">
                 <h3>Réalisations</h3>
-                <!-- Ajouter vos réalisations ici -->
+                <div class="row g-4">
+                    <!-- Projet 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 project-card fade-in">
+                            <a href="https://lamaisondelha.alwaysdata.net/" class="project-image-link">
+                                <img src="public/assets/img/projects/maison-elha.png" class="card-img-top project-image"
+                                    alt="La maison d'ElHa">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://lamaisondelha.alwaysdata.net/"
+                                    class="project-title text-decoration-none">
+                                    <h5 class="card-title">La maison d'ElHa</h5>
+                                </a>
+                                <div class="project-tags mb-3">
+                                    <span class="badge badge-html">HTML</span>
+                                    <span class="badge badge-css">CSS</span>
+                                    <span class="badge badge-php">PHP</span>
+                                    <span class="badge badge-sql">SQL</span>
+                                    <span class="badge badge-js">JavaScript</span>
+                                </div>
+                                <p class="card-text">Création d'un site de présentation d'un artisan potier (Projet de
+                                    fin de formation de développeur web & web mobile)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 project-card fade-in">
+                            <a href="https://votre-lien-2.com" class="project-image-link">
+                                <img src="public/assets/img/projects/jeu-pendu.png" class="card-img-top project-image"
+                                    alt="Le jeu du pendu">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://votre-lien-2.com" class="project-title text-decoration-none">
+                                    <h5 class="card-title">Le jeu du pendu</h5>
+                                </a>
+                                <div class="project-tags mb-3">
+                                    <span class="badge badge-html">HTML</span>
+                                    <span class="badge badge-css">CSS</span>
+                                    <span class="badge badge-js">JavaScript</span>
+                                </div>
+                                <p class="card-text">Développement d'un jeu du pendu interactif en JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 project-card fade-in">
+                            <a href="https://votre-lien-3.com" class="project-image-link">
+                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
+                                    alt="Le jeu Yams">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
+                                    <h5 class="card-title">Le jeu Yams</h5>
+                                </a>
+                                <div class="project-tags mb-3">
+                                    <span class="badge bg-light text-dark">React</span>
+                                    <span class="badge bg-light text-dark">Node.js</span>
+                                    <span class="badge bg-light text-dark">MongoDB</span>
+                                </div>
+                                <p class="card-text">Description du troisième projet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 project-card fade-in">
+                            <a href="https://votre-lien-3.com" class="project-image-link">
+                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
+                                    alt="Le Pokedex">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
+                                    <h5 class="card-title">Le Pokedex</h5>
+                                </a>
+                                <div class="project-tags mb-3">
+                                    <span class="badge bg-light text-dark">React</span>
+                                    <span class="badge bg-light text-dark">Node.js</span>
+                                    <span class="badge bg-light text-dark">MongoDB</span>
+                                </div>
+                                <p class="card-text">Description du quatrième projet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 project-card fade-in">
+                            <a href="https://votre-lien-3.com" class="project-image-link">
+                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
+                                    alt="Greeny">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
+                                    <h5 class="card-title">Greeny</h5>
+                                </a>
+                                <div class="project-tags mb-3">
+                                    <span class="badge bg-light text-dark">React</span>
+                                    <span class="badge bg-light text-dark">Node.js</span>
+                                    <span class="badge bg-light text-dark">MongoDB</span>
+                                </div>
+                                <p class="card-text">Description de votre troisième projet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 project-card fade-in">
+                            <a href="https://votre-lien-3.com" class="project-image-link">
+                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
+                                    alt="Rent my ride">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
+                                    <h5 class="card-title">Rent My Ride</h5>
+                                </a>
+                                <div class="project-tags mb-3">
+                                    <span class="badge bg-light text-dark">React</span>
+                                    <span class="badge bg-light text-dark">Node.js</span>
+                                    <span class="badge bg-light text-dark">MongoDB</span>
+                                </div>
+                                <p class="card-text">Description de votre troisième projet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+
 
             <section id="contact" class="content-section p-4">
                 <h3>Contact</h3>

@@ -1,0 +1,344 @@
+/***************************** Section Compétences *********************************/
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.competence-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.competence-item:nth-child(n) {
+    animation-delay: calc(0.1s * var(--i, 1));
+}
+
+.tech-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.competence-item:hover .tech-icon {
+    transform: scale(1.1);
+}
+
+/******************************** Section Formations ********************************/
+.formation-list {
+    padding: 20px;
+}
+
+.formation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--color-border);
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.formation-item:last-child {
+    border-bottom: none;
+}
+
+.formation-logo {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.formation-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.formation-content {
+    flex-grow: 1;
+}
+
+.formation-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-hover);
+    margin-bottom: 8px;
+}
+
+.formation-content p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.formation-date {
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+}
+
+/*********************************** Section Expériences ********************************/
+.experience-list {
+    padding: 20px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--color-border);
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-logo {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.experience-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.experience-content {
+    flex-grow: 1;
+}
+
+.experience-header {
+    margin-bottom: 15px;
+}
+
+.experience-header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-hover);
+    margin-bottom: 8px;
+}
+
+.experience-company {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.experience-date,
+.experience-location {
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+}
+
+.experience-tasks {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--color-text-hover);
+}
+
+.experience-tasks li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/******************************** Section Réalisations *********************************/
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.project-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.project-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.project-title {
+    color: var(--color-text-hover);
+    transition: color 0.3s ease;
+}
+
+.project-title:hover {
+    color: var(--color-primary);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Badges des technologies */
+.badge {
+    transition: opacity 0.3s ease;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+.badge:hover {
+    opacity: 0.8;
+}
+
+/* Couleurs spécifiques pour chaque technologie */
+.badge-html {
+    background-color: #EA612A !important;
+    color: white !important;
+}
+
+.badge-css {
+    background-color: #146EB0 !important;
+    color: white !important;
+}
+
+.badge-js {
+    background-color: #EFD81D !important;
+    color: black !important;
+}
+
+.badge-php {
+    background-color: #777BB3 !important;
+    color: white !important;
+}
+
+.badge-sql {
+    background-color: #1491BA !important;
+    color: white !important;
+}
+
+.badge-bootstrap {
+    background-color: #7952B3 !important;
+    color: white !important;
+}
+
+.badge-react {
+    background-color: #61DAFB !important;
+    color: black !important;
+}
+
+
+/* Animation d'apparition séquentielle */
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .competences-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tech-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .competences-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .formation-item,
+    .experience-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .formation-logo,
+    .experience-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experience-tasks {
+        text-align: left;
+    }
+
+    .experience-details {
+        align-items: center;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .competences-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tech-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experience-tasks li {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+}
