@@ -1,30 +1,9 @@
 services:
   web:
-    build: .
-    container_name: la_maison_delha
-    volumes:
-      - ./:/var/www/html
-    restart: always
-    depends_on:
-      - database
+    build:
+      context: .
     ports:
-      - "8000:80"
-
-  database:
-    image: mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: maison
-      MYSQL_DATABASE: 'database-la-maison-delha'
+      - "8080:80" # Expose le conteneur sur le port 8080
     volumes:
-      - "data-pdo:/var/lib/mysql"
-  phpmyadmin:
-    image: phpmyadmin
-    restart: always
-    ports:
-      - 8080:80
-    environment:
-      - PMA_ARBITRARY=1
-
-volumes:
-  data-pdo:
+      - ./:/var/www/html # Montez le code source pour le développement
+    container_name: mon-cv-numerique
