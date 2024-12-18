@@ -25,3 +25,19 @@ document.querySelectorAll('.nav-link').forEach(link => {
         this.classList.add('active');
     });
 });
+// Fonction pour partager le lien du profil
+function shareProfile() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Mon Profil',
+            text: 'Découvrez mon profil !',
+            url: window.location.href, // Partage le lien actuel
+        }).then(() => {
+            console.log('Profil partagé avec succès !');
+        }).catch((error) => {
+            console.error('Erreur lors du partage :', error);
+        });
+    } else {
+        alert("La fonctionnalité de partage n'est pas supportée sur ce navigateur.");
+    }
+}

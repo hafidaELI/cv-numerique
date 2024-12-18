@@ -2,10 +2,13 @@
 :root {
     --color-background: #F4F2EE;
     --color-primary: #007bff;
+    --color-blue-dark: #004182;
     --color-secondary: #6c757d;
     --color-text: #666666;
     --color-text-hover: #000;
     --color-border: #ddd;
+    --color-section: #ffffff;
+    --color-grey: #424242;
 }
 
 /* Général */
@@ -93,11 +96,12 @@ HOME PAGE
     position: relative;
     text-align: center;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-section);
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     /* Ajoute un effet visuel */
+    overflow: visible;
 }
 
 /* Image d'accueil */
@@ -106,14 +110,14 @@ HOME PAGE
     width: 100%;
     height: 300px;
     /* Ajuste la hauteur selon la maquette */
-    overflow: hidden;
+    overflow: visible !important;
 
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .profile-wrapper {
@@ -122,6 +126,8 @@ HOME PAGE
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    overflow: visible;
 }
 
 /* Conteneur de la photo de profil */
@@ -133,8 +139,8 @@ HOME PAGE
 
 .profile-badge {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     margin: auto;
 }
 
@@ -142,23 +148,9 @@ HOME PAGE
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 5px solid white;
+    /* border: 5px solid white; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
-}
-
-.profile-status {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4caf50;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 /* Texte de profil */
@@ -213,39 +205,116 @@ HOME PAGE
     flex-wrap: wrap;
 }
 
-.btn-primary {
-    /* background-color: var(--color-primary);
-    border: none;
-    margin-right: 10px; */
+.btn-group {
+    position: relative;
+    z-index: 9999;
+}
+
+.btn-msg {
     background-color: var(--color-primary);
     color: white;
     border: none;
     padding: 8px 16px;
-    border-radius: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
 }
 
-.btn-secondary {
-    /* background-color: var(--color-secondary);
-    border: none; */
-    background-color: var(--color-secondary);
+/* Ajout de l'espace entre l'icône et le texte */
+.btn-msg i,
+.dropdown-item i {
+    margin-right: 7px;
+
+}
+
+.btn-msg:hover,
+.btn-msg:focus {
+    background-color: var(--color-blue-dark);
+    /* Une teinte plus foncée */
     color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 10px;
+    opacity: 1;
+    /* Rétablir l'opacité si modifiée */
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
-    opacity: 0.8;
+a.btn-msg {
+    color: white;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprime le soulignement */
+}
+
+.btn-plus {
+    background-color: var(----color-section);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    padding: 8px 16px;
+    border-radius: 15px !important;
+    font-size: 16px;
+    text-align: center;
+    content: none;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-plus:hover,
+.btn-plus:focus {
+    border-width: 3px;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: var(--color-background)
+}
+
+.btn-plus::after {
+    content: none;
+    /* Supprime la flèche générée par Bootstrap */
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid var(--color-grey);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    padding: 8px 0;
+}
+
+/* Style du menu déroulant */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    color: var(--color-grey) !important;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-background);
+    color: var(--color-grey);
+}
+
+.dropdown-item i {
+    color: inherit;
+    /* Hérite de la couleur du texte de l'élément parent */
 }
 
 /* Sections de contenu */
 .content-section {
-    background-color: #fff;
+    background-color: var(--color-section);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     height: 100%;
+    position: relative;
+    /* Évite que les enfants comme le dropdown soient cachés */
+    overflow: visible;
+    /* Assure que rien ne soit coupé dans cette section */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
 }
 
 /* Style personnalisé pour la section "À propos" */
