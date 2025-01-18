@@ -118,7 +118,7 @@
                     <h2>Développeuse Web en devenir</h2>
                     <p>Amiens-Lille-Paris · <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Coordonnées</a></p>
                     <!-- Modal Bootstrap -->
-                    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <!-- <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -156,6 +156,57 @@
                                                 <div class="fw-bold mb-1">Anniversaire</div>
                                                 <div>Décembre 1992</div>
                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contactModalLabel">Coordonnées</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa-brands fa-linkedin fs-5 me-3 text-secondary"></i>
+                                                <span class="fw-bold">Profil LinkedIn</span>
+                                            </div>
+                                            <div class="ps-4 text-start">
+                                                <a href="https://www.linkedin.com/in/hafida-el-idrissi-ba7259a8" target="_blank" class="text-decoration-none">linkedin.com/in/hafida-el-idrissi-ba7259a8</a>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa-brands fa-github fs-5 me-3 text-secondary"></i>
+                                                <span class="fw-bold">Profil GitHub</span>
+                                            </div>
+                                            <div class="ps-4 text-start">
+                                                <a href="https://github.com/hafidaELI" target="_blank" class="text-decoration-none">https://github.com/hafidaELI</a>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa-regular fa-envelope fs-5 me-3 text-secondary"></i>
+                                                <span class="fw-bold">E-mail</span>
+                                            </div>
+                                            <div class="ps-4 text-start">
+                                                <a href="mailto:elidrissi-hafida@hotmail.fr" class="text-decoration-none">elidrissi-hafida@hotmail.fr</a>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fa-regular fa-calendar fs-5 me-3 text-secondary"></i>
+                                                <span class="fw-bold">Anniversaire</span>
+                                            </div>
+                                            <div class="ps-4 text-start">Décembre 1992</div>
                                         </li>
                                     </ul>
                                 </div>
