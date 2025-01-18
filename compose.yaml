@@ -1,9 +1,47 @@
+# services:
+#   web:
+#     build:
+#       context: .
+#     ports:
+#       - "8080:80" # Expose le conteneur sur le port 8080
+#     volumes:
+#       - ./:/var/www/html # Montez le code source pour le développement
+#     container_name: mon-cv-numerique
+
 services:
   web:
-    build:
-      context: .
-    ports:
-      - "8080:80" # Expose le conteneur sur le port 8080
+    build: .
+    container_name: mon_cv_numerique
     volumes:
-      - ./:/var/www/html # Montez le code source pour le développement
-    container_name: mon-cv-numerique
+      - ./:/var/www/html
+    restart: always
+    depends_on:
+      - db # Assure que MySQL est prêt avant de démarrer
+    ports:
+      - "8080:80" # Expose le service PHP sur le port 8080
+
+  db:
+    image: mysql
+    container_name: cv_mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: maison # Mot de passe root pour MySQL
+      MYSQL_DATABASE: contact_form_cv # Nom de la base de données
+      MYSQL_USER: hafidaEl
+      MYSQL_PASSWORD: password # Mot de passe utilisateur
+    volumes:
+      - db_data:/var/lib/mysql # Monte un volume persistant pour conserver les données
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: cv_phpmyadmin
+    restart: always
+    ports:
+      - "8000:80" # Accès à phpMyAdmin via localhost:8080
+    environment:
+      PMA_HOST: db # Connecte phpMyAdmin au service MySQL
+      PMA_USER: root
+      PMA_PASSWORD: maison
+
+volumes:
+  db_data:

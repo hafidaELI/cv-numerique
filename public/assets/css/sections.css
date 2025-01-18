@@ -163,6 +163,10 @@
 }
 
 /******************************** Section Réalisations *********************************/
+.realisation-list {
+    padding: 20px;
+}
+
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
@@ -186,16 +190,18 @@
 }
 
 .project-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .project-title {
     color: var(--color-text-hover);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
 }
 
 .project-title:hover {
     color: var(--color-primary);
+    transform: scale(1.2);
 }
 
 .project-tags {

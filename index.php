@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar Desktop -->
-    <nav class="navbar navbar-expand-lg bg-light border-bottom d-none d-lg-flex">
+    <nav class="navbar navbar-expand-lg bg-light border-bottom d-none d-lg-flex fixed-top">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -57,7 +57,7 @@
     <!-- Navbar Mobile -->
     <div class="d-lg-none">
         <!-- Top Navbar -->
-        <nav class="navbar bg-light">
+        <nav class="navbar bg-light fixed-top">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
@@ -102,7 +102,7 @@
         <section class="hero-section">
             <!-- Image d'accueil -->
             <div class="hero-image">
-                <img src="public/assets/img/about/background-img-2.png"
+                <img src="public/assets/img/about/background-img-8.png"
                     alt="Fond d'accueil pour le CV de Hafida EL IDRISSI">
             </div>
             <!-- Conteneur de profil -->
@@ -116,10 +116,59 @@
                 <div class="profile-info">
                     <h1>Hafida EL IDRISSI</h1>
                     <h2>Développeuse Web en devenir</h2>
-                    <p>Amiens-Lille-Paris · <a href="#contact">Coordonnées</a></p>
+                    <p>Amiens-Lille-Paris · <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Coordonnées</a></p>
+                    <!-- Modal Bootstrap -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contactModalLabel">Coordonnées</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex mb-3 align-items-start">
+                                            <i class="fa-brands fa-linkedin fs-5 me-3 text-secondary mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold mb-1">Profil LinkedIn</div>
+                                                <a href="https://www.linkedin.com/in/hafida-el-idrissi-ba7259a8" target="_blank" class="text-decoration-none">linkedin.com/in/hafida-el-idrissi-ba7259a8</a>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex mb-3 align-items-start">
+                                            <i class="fa-brands fa-github fs-5 text-secondary me-3"></i>
+                                            <div>
+                                                <div class="fw-bold mb-1">Profil GitHub</div>
+                                                <a href="https://github.com/hafidaELI" target="_blank" class="text-decoration-none">
+                                                    https://github.com/hafidaELI
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex mb-3 align-items-start">
+                                            <i class="fa-regular fa-envelope fs-5 me-3 text-secondary mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold mb-1">E-mail</div>
+                                                <a href="mailto:elidrissi-hafida@hotmail.fr" class="text-decoration-none">elidrissi-hafida@hotmail.fr</a>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-3">
+                                            <i class="fa-regular fa-calendar fs-5 me-3 text-secondary mt-1"></i>
+                                            <div>
+                                                <div class="fw-bold mb-1">Anniversaire</div>
+                                                <div>Décembre 1992</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="button-container">
-                        <a href="https://www.exemple.com/message" class="btn btn-msg" role="button"><i class="fa-regular fa-paper-plane"></i> Message</a>
+                        <a href="mailto:elidrissi-hafida@hotmail.fr" class="btn btn-msg" role="button"><i class="fa-regular fa-paper-plane"></i> Message</a>
 
                         <!-- Bouton "Plus" avec menu déroulant -->
                         <div class="btn-group">
@@ -133,7 +182,7 @@
                                 </li>
                                 <!-- Télécharger le PDF -->
                                 <li>
-                                    <a class="dropdown-item" href="/path/to/mon_cv.pdf" download="mon_cv.pdf"> <i class="fa-solid fa-download"></i> Enregistrer au format PDF</a>
+                                    <a class="dropdown-item" href="/public/assets/cv/cv-elidrissi-hafida.pdf" target="_blank"> <i class="fa-solid fa-download"></i> Enregistrer au format PDF</a>
                                 </li>
                             </ul>
                         </div>
@@ -167,7 +216,7 @@
                         </p>
                         <p>
                             Curieuse, motivée et organisée, j’aime explorer de nouvelles idées et technologies pour
-                            concevoir des solutions fonctionnelles et esthétiques : hâte de partager cette aventure
+                            concevoir des solutions fonctionnelles et esthétiques : Hâte de partager cette aventure
                             avec
                             vous !
                         </p>
@@ -183,7 +232,7 @@
                                     <div class="icon-container">
                                         <img src="public/assets/img/about/car.jpg" alt="Permis">
                                     </div>
-                                    Permis B et véhicule
+                                    Permis B et véhiculée
                                 </li>
                                 <li>
                                     <div class="icon-container">
@@ -252,11 +301,13 @@
                     </div>
                 </div>
             </section>
+        </div>
 
+        <div class="container">
             <section id="formation" class="content-section p-4 mb-4">
                 <h3>Formations</h3>
                 <div class="formation-list">
-                    <div class="formation-item fade-in">
+                    <!-- <div class="formation-item fade-in">
                         <div class="formation-logo">
                             <img src="public/assets/img/logos/oclock.png" alt="O'clock">
                         </div>
@@ -265,8 +316,17 @@
                             <p>Concepteur développeur d'application - Titre professionnel (TP) de niveau 6</p>
                             <span class="formation-date">Janv. 2025 - Sept. 2025</span>
                         </div>
+                    </div> -->
+                    <div class="formation-item fade-in">
+                        <div class="formation-logo">
+                            <img src="public/assets/img/logos/lamanu.png" alt="la Manu">
+                        </div>
+                        <div class="formation-content">
+                            <h4>La Manu - École Supérieure des Métiers du Numérique</h4>
+                            <p>Concepteur développeur d'application - Titre professionnel (TP) de niveau 6</p>
+                            <span class="formation-date">Mars 2025 - Juin. 2026</span>
+                        </div>
                     </div>
-
                     <div class="formation-item fade-in">
                         <div class="formation-logo">
                             <img src="public/assets/img/logos/lamanu.png" alt="La Manu">
@@ -312,7 +372,9 @@
                     </div>
                 </div>
             </section>
+        </div>
 
+        <div class="container">
             <section id="experience" class="content-section p-4 mb-4">
                 <h3>Expériences</h3>
                 <div class="experience-list">
@@ -342,77 +404,80 @@
                     </div>
                 </div>
             </section>
+        </div>
 
+        <div class="container">
             <section id="realisations" class="content-section p-4 mb-4">
                 <h3>Réalisations</h3>
-                <div class="row g-4">
-                    <!-- Projet 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 project-card fade-in">
-                            <a href="https://lamaisondelha.alwaysdata.net/" class="project-image-link">
-                                <img src="public/assets/img/projects/maison-elha.png" class="card-img-top project-image"
-                                    alt="La maison d'ElHa">
-                            </a>
-                            <div class="card-body">
-                                <a href="https://lamaisondelha.alwaysdata.net/" class="project-title text-decoration-none">
-                                    <h5 class="card-title">La maison d'ElHa</h5>
+                <div class="realisation-list">
+                    <div class="row g-4">
+                        <!-- Projet 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card h-100 project-card fade-in">
+                                <a href="https://lamaisondelha.alwaysdata.net/" class="project-image-link">
+                                    <img src="public/assets/img/projects/maison-elha.png" class="card-img-top project-image"
+                                        alt="La maison d'ElHa">
                                 </a>
-                                <div class="project-tags mb-3">
-                                    <span class="badge badge-html">HTML</span>
-                                    <span class="badge badge-css">CSS</span>
-                                    <span class="badge badge-php">PHP</span>
-                                    <span class="badge badge-sql">SQL</span>
-                                    <span class="badge badge-js">JavaScript</span>
+                                <div class="card-body">
+                                    <a href="https://lamaisondelha.alwaysdata.net/" class="project-title text-decoration-none">
+                                        <h5 class="card-title">La maison d'ElHa</h5>
+                                    </a>
+                                    <div class="project-tags mb-3">
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                        <span class="badge badge-php">PHP</span>
+                                        <span class="badge badge-sql">SQL</span>
+                                        <span class="badge badge-js">JavaScript</span>
+                                    </div>
+                                    <p class="card-text">Création d'un site de présentation d'un artisan potier (Projet de
+                                        fin de formation de développeur web & web mobile)</p>
                                 </div>
-                                <p class="card-text">Création d'un site de présentation d'un artisan potier (Projet de
-                                    fin de formation de développeur web & web mobile)</p>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Projet 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 project-card fade-in">
-                            <a href="https://votre-lien-2.com" class="project-image-link">
-                                <img src="public/assets/img/projects/jeu-pendu.png" class="card-img-top project-image"
-                                    alt="Le jeu du pendu">
-                            </a>
-                            <div class="card-body">
-                                <a href="https://votre-lien-2.com" class="project-title text-decoration-none">
-                                    <h5 class="card-title">Le jeu du pendu</h5>
+                        <!-- Projet 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card h-100 project-card fade-in">
+                                <a href="https://el-idrissi.alwaysdata.net/" class="project-image-link">
+                                    <img src="public/assets/img/projects/jeu-pendu.png" class="card-img-top project-image"
+                                        alt="Le jeu du pendu">
                                 </a>
-                                <div class="project-tags mb-3">
-                                    <span class="badge badge-html">HTML</span>
-                                    <span class="badge badge-css">CSS</span>
-                                    <span class="badge badge-js">JavaScript</span>
+                                <div class="card-body">
+                                    <a href="https://el-idrissi.alwaysdata.net/" class="project-title text-decoration-none">
+                                        <h5 class="card-title">Le jeu du pendu</h5>
+                                    </a>
+                                    <div class="project-tags mb-3">
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                        <span class="badge badge-js">JavaScript</span>
+                                    </div>
+                                    <p class="card-text">Développement d'un jeu du pendu interactif en JavaScript</p>
                                 </div>
-                                <p class="card-text">Développement d'un jeu du pendu interactif en JavaScript</p>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Projet 3 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 project-card fade-in">
-                            <a href="https://votre-lien-3.com" class="project-image-link">
-                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
-                                    alt="Le jeu Yams">
-                            </a>
-                            <div class="card-body">
-                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
-                                    <h5 class="card-title">Le jeu Yams</h5>
+                        <!-- Projet 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card h-100 project-card fade-in">
+                                <a href="https://votre-lien-3.com" class="project-image-link">
+                                    <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
+                                        alt="Le jeu Yams">
                                 </a>
-                                <div class="project-tags mb-3">
-                                    <span class="badge bg-light text-dark">React</span>
-                                    <span class="badge bg-light text-dark">Node.js</span>
-                                    <span class="badge bg-light text-dark">MongoDB</span>
+                                <div class="card-body">
+                                    <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
+                                        <h5 class="card-title">Le jeu Yams</h5>
+                                    </a>
+                                    <div class="project-tags mb-3">
+                                        <span class="badge bg-light text-dark">React</span>
+                                        <span class="badge bg-light text-dark">Node.js</span>
+                                        <span class="badge bg-light text-dark">MongoDB</span>
+                                    </div>
+                                    <p class="card-text">Description du troisième projet</p>
                                 </div>
-                                <p class="card-text">Description du troisième projet</p>
                             </div>
                         </div>
-                    </div>
-                    <!-- Projet 4 -->
-                    <div class="col-lg-4 col-md-6">
+                        <!-- Projet 4 -->
+                        <!-- <div class="col-lg-4 col-md-6">
                         <div class="card h-100 project-card fade-in">
                             <a href="https://votre-lien-3.com" class="project-image-link">
                                 <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
@@ -430,87 +495,79 @@
                                 <p class="card-text">Description du quatrième projet</p>
                             </div>
                         </div>
+                    </div> -->
+
                     </div>
-                    <!-- Projet 4 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 project-card fade-in">
-                            <a href="https://votre-lien-3.com" class="project-image-link">
-                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
-                                    alt="Greeny">
-                            </a>
-                            <div class="card-body">
-                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
-                                    <h5 class="card-title">Greeny</h5>
-                                </a>
-                                <div class="project-tags mb-3">
-                                    <span class="badge bg-light text-dark">React</span>
-                                    <span class="badge bg-light text-dark">Node.js</span>
-                                    <span class="badge bg-light text-dark">MongoDB</span>
-                                </div>
-                                <p class="card-text">Description de votre troisième projet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Projet 5 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 project-card fade-in">
-                            <a href="https://votre-lien-3.com" class="project-image-link">
-                                <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
-                                    alt="Rent my ride">
-                            </a>
-                            <div class="card-body">
-                                <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
-                                    <h5 class="card-title">Rent My Ride</h5>
-                                </a>
-                                <div class="project-tags mb-3">
-                                    <span class="badge bg-light text-dark">React</span>
-                                    <span class="badge bg-light text-dark">Node.js</span>
-                                    <span class="badge bg-light text-dark">MongoDB</span>
-                                </div>
-                                <p class="card-text">Description de votre troisième projet</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="contact" class="content-section p-4 mb-4">
+                <h3>Contact</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm">
+                            <div class="card-body p-5">
+                                <h2 class="text-center mb-4">Me Contacter</h2>
+
+                                <form id="contactForm" method="POST" action="save-message.php">
+                                    <!-- Nom et Prénom sur la même ligne -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="nom" class="form-label">Nom *</label>
+                                                <input type="text" class="form-control" id="nom" name="nom" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="prenom" class="form-label">Prénom *</label>
+                                                <input type="text" class="form-control" id="prenom" name="prenom" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Société -->
+                                    <div class="form-group mb-3">
+                                        <label for="societe" class="form-label">Société</label>
+                                        <input type="text" class="form-control" id="societe" name="societe">
+                                    </div>
+
+                                    <!-- Email et Téléphone sur la même ligne -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email" class="form-label">Email *</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="telephone" class="form-label">Téléphone *</label>
+                                                <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div class="form-group mb-4">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary px-5">Envoyer</button>
+                                    </div>
+                                </form>
+
+                                <!-- Message de confirmation -->
+                                <div id="formMessage" class="mt-3 text-center" style="display: none;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-
-            <section id="contact" class="content-section p-4">
-                <h3>Contact</h3>
-                <h1>Contactez-nous</h1>
-                <form method="POST" action="">
-                    <label for="nom">Nom:</label>
-                    <input type="text" id="nom" name="nom" required><br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea><br>
-
-                    <button type="submit">Envoyer</button>
-                </form>
-
-                <?php
-                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    $nom = htmlspecialchars($_POST['nom']);
-                    $email = htmlspecialchars($_POST['email']);
-                    $message = htmlspecialchars($_POST['message']);
-
-                    // Configuration de l'envoi par mail
-                    $to = "votre-adresse@mail.com";
-                    $subject = "Nouveau message de $nom";
-                    $headers = "From: $email";
-                    // Envoyer l'email
-                    if (mail($to, $subject, $message, $headers)) {
-                        echo "<p>Message envoyé avec succès !</p>";
-                    } else {
-                        echo "<p>Une erreur est survenue lors de l'envoi.</p>";
-                    }
-                } else {
-                    echo "Méthode non autorisée.";
-                }
-                ?>
             </section>
         </div>
     </main>
@@ -524,6 +581,7 @@
 
     <script src="public/assets/js/scroll.js"></script>
     <script src="public/assets/js/index.js"></script>
+    <script src="public/assets/js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

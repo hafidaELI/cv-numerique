@@ -9,11 +9,13 @@
     --color-border: #ddd;
     --color-section: #ffffff;
     --color-grey: #424242;
+    --color-title: #7431f9;
 }
 
 /* Général */
 body {
     background-color: var(--color-background);
+    margin-top: 70px;
     padding-bottom: 60px;
     /* Espace pour la navbar mobile */
 }
@@ -101,7 +103,7 @@ HOME PAGE
     /* overflow: hidden; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     /* Ajoute un effet visuel */
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 /* Image d'accueil */
@@ -110,7 +112,7 @@ HOME PAGE
     width: 100%;
     height: 300px;
     /* Ajuste la hauteur selon la maquette */
-    overflow: visible !important;
+    /* overflow: visible !important; */
 
 }
 
@@ -126,7 +128,7 @@ HOME PAGE
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+    /* z-index: 2; */
     overflow: visible;
 }
 
@@ -148,35 +150,25 @@ HOME PAGE
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /* border: 5px solid white; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
 }
 
 /* Texte de profil */
 .profile-info {
-    /* text-align: center;
-    padding: 20px; */
-    /* margin-top: 80px; */
     margin-top: 10px;
     padding: 0 20px;
-    /* Ajoute un espace latéral pour les petits écrans */
     color: var(--color-text);
 }
 
 .profile-info h1 {
-    /* font-size: clamp(30px, 5vw, 24px);
-    font-weight: bold;
-    margin-top: 10px; */
     font-size: clamp(18px, 4vw, 24px);
     font-weight: bold;
     margin-bottom: 5px;
+    color: var(--color-text-hover);
 }
 
 .profile-info h2 {
-    /* font-size: clamp(16px, 4vw, 20px);
-    color: var(--color-text);
-    margin-bottom: 15px; */
     font-size: clamp(14px, 3.5vw, 18px);
     color: var(--color-text);
     margin-bottom: 10px;
@@ -207,7 +199,7 @@ HOME PAGE
 
 .btn-group {
     position: relative;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .btn-msg {
@@ -253,7 +245,7 @@ a.btn-msg {
     text-align: center;
     content: none;
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
 
 .btn-plus:hover,
@@ -271,12 +263,17 @@ a.btn-msg {
 
 .dropdown-menu {
     position: absolute;
-    z-index: 9999;
+    z-index: 1035 !important;
     border: 1px solid var(--color-grey);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     min-width: 200px;
     padding: 8px 0;
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
 }
 
 /* Style du menu déroulant */
@@ -309,12 +306,12 @@ a.btn-msg {
     /* Évite que les enfants comme le dropdown soient cachés */
     overflow: visible;
     /* Assure que rien ne soit coupé dans cette section */
-    z-index: 1;
+    /* z-index: auto; */
 }
 
 .container {
     position: relative;
-    z-index: 1;
+    /* z-index: auto; */
 }
 
 /* Style personnalisé pour la section "À propos" */
@@ -355,6 +352,20 @@ a.btn-msg {
     object-fit: contain;
 }
 
+/* popup coordonnées  */
+.modal-backdrop {
+    position: fixed !important;
+    z-index: 1040 !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed !important;
+    z-index: 1050 !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /***********************************************
 RESPONSIVE
