@@ -118,53 +118,6 @@
                     <h2>Développeuse Web en devenir</h2>
                     <p>Amiens-Lille-Paris · <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Coordonnées</a></p>
                     <!-- Modal Bootstrap -->
-                    <!-- <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="contactModalLabel">Coordonnées</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="d-flex mb-3 align-items-start">
-                                            <i class="fa-brands fa-linkedin fs-5 me-3 text-secondary mt-1"></i>
-                                            <div>
-                                                <div class="fw-bold mb-1">Profil LinkedIn</div>
-                                                <a href="https://www.linkedin.com/in/hafida-el-idrissi-ba7259a8" target="_blank" class="text-decoration-none">linkedin.com/in/hafida-el-idrissi-ba7259a8</a>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex mb-3 align-items-start">
-                                            <i class="fa-brands fa-github fs-5 text-secondary me-3"></i>
-                                            <div>
-                                                <div class="fw-bold mb-1">Profil GitHub</div>
-                                                <a href="https://github.com/hafidaELI" target="_blank" class="text-decoration-none">
-                                                    https://github.com/hafidaELI
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex mb-3 align-items-start">
-                                            <i class="fa-regular fa-envelope fs-5 me-3 text-secondary mt-1"></i>
-                                            <div>
-                                                <div class="fw-bold mb-1">E-mail</div>
-                                                <a href="mailto:elidrissi-hafida@hotmail.fr" class="text-decoration-none">elidrissi-hafida@hotmail.fr</a>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-start mb-3">
-                                            <i class="fa-regular fa-calendar fs-5 me-3 text-secondary mt-1"></i>
-                                            <div>
-                                                <div class="fw-bold mb-1">Anniversaire</div>
-                                                <div>Décembre 1992</div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -553,74 +506,21 @@
             </section>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <section id="contact" class="content-section p-4 mb-4">
                 <h3>Contact</h3>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="card shadow-sm">
                             <div class="card-body p-5">
-                                <h2 class="text-center mb-4">Me Contacter</h2>
 
-                                <form id="contactForm" method="POST" action="save-message.php">
-                                    <!-- Nom et Prénom sur la même ligne -->
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="nom" class="form-label">Nom *</label>
-                                                <input type="text" class="form-control" id="nom" name="nom" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="prenom" class="form-label">Prénom *</label>
-                                                <input type="text" class="form-control" id="prenom" name="prenom" required>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Société -->
-                                    <div class="form-group mb-3">
-                                        <label for="societe" class="form-label">Société</label>
-                                        <input type="text" class="form-control" id="societe" name="societe">
-                                    </div>
-
-                                    <!-- Email et Téléphone sur la même ligne -->
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="email" class="form-label">Email *</label>
-                                                <input type="email" class="form-control" id="email" name="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="telephone" class="form-label">Téléphone *</label>
-                                                <input type="tel" class="form-control" id="telephone" name="telephone" required>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Message -->
-                                    <div class="form-group mb-4">
-                                        <label for="message" class="form-label">Message *</label>
-                                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                                    </div>
-
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-primary px-5">Envoyer</button>
-                                    </div>
-                                </form>
-
-                                <!-- Message de confirmation -->
-                                <div id="formMessage" class="mt-3 text-center" style="display: none;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </section>
-        </div>
+        </div> -->
     </main>
 
     <!-- Bouton retour en haut -->
@@ -628,11 +528,36 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
+    <footer class="d-flex justify-content-center align-items-center py-3 bg-light">
+        <!-- Section gauche (LinkedIn et GitHub) -->
+        <div class="d-flex align-items-center me-3">
+            <a href="https://www.linkedin.com/in/hafida-el-idrissi-ba7259a8" target="_blank" class="footer-icon mx-2">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/hafidaELI" target="_blank" class="footer-icon mx-2">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mx-3">
+            <span>Hafida EL IDRISSI &copy; <?= date('Y') ?> Tous droits réservés.</span>
+
+        </div>
+        <!-- Section droite (Imprimante et Message) -->
+        <div class="d-flex align-items-center">
+            <a href="/public/assets/cv/cv-elidrissi-hafida.pdf" target="_blank" class="footer-icon mx-2">
+                <i class="fas fa-print"></i>
+            </a>
+            <a href="mailto:elidrissi-hafida@hotmail.fr" class="footer-icon mx-2">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
     <script src="https://kit.fontawesome.com/afc6a54030.js" crossorigin="anonymous"></script>
 
     <script src="public/assets/js/scroll.js"></script>
     <script src="public/assets/js/index.js"></script>
-    <script src="public/assets/js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

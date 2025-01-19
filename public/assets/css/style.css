@@ -18,6 +18,11 @@ body {
     margin-top: 70px;
     padding-bottom: 60px;
     /* Espace pour la navbar mobile */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /***********************************************
@@ -365,6 +370,46 @@ a.btn-msg {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*************************************************************** FOOTER*********************************************/
+/* Animation des icônes du footer */
+.footer-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    /* Couleur de fond */
+    color: #555;
+    /* Couleur de l'icône */
+    text-decoration: none;
+    /* Supprime le soulignement des liens */
+    font-size: 16px;
+    /* Taille des icônes */
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    margin: 0 8px;
+}
+
+.footer-icon:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Alignement central et espacement */
+footer span {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Rapprochement des sections */
+footer .d-flex {
+    gap: 10px;
+    /* Espacement modéré entre les groupes */
 }
 
 /***********************************************
