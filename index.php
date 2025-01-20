@@ -46,9 +46,27 @@
                     <a class="nav-link" href="#realisations"><i
                             class="fa-solid fa-palette nav-icon"></i><span>Réalisations</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact"><i
-                            class="fa-solid fa-comment-dots nav-icon"></i><span>Contact</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-comment-dots nav-icon"></i><span>Contact</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="mailto:elidrissi-hafida@hotmail.fr">
+                                <i class="fa-regular fa-envelope me-2 text-primary"></i>
+                                <span>elidrissi-hafida@hotmail.fr</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="https://calendly.com/hafida-idrissi-hei" target="_blank">
+                                <i class="fa-regular fa-calendar-check me-2 text-primary"></i>
+                                <span>Prendre rendez-vous</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -65,9 +83,29 @@
                         class="logo rounded">
                 </a>
 
-                <!-- Contact -->
-                <a href="#contact" class="nav-link mobile-nav-link"><i
-                        class="fa-solid fa-comment-dots nav-icon"></i><span>Contact</span></a>
+                <!-- Contact Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-link mobile-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-comment-dots nav-icon"></i><span>Contact</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="mailto:elidrissi-hafida@hotmail.fr">
+                                <i class="fa-regular fa-envelope me-2 text-primary"></i>
+                                <span>elidrissi-hafida@hotmail.fr</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="https://calendly.com/hafida-idrissi-hei" target="_blank">
+                                <i class="fa-regular fa-calendar-check me-2 text-primary"></i>
+                                <span>Prendre rendez-vous</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -97,6 +135,7 @@
             </ul>
         </div>
     </div>
+
     <main class="mt-5">
         <!-- Section principale pour l'accueil -->
         <section class="hero-section">
@@ -418,12 +457,12 @@
                         <!-- Projet 1 -->
                         <div class="col-lg-4 col-md-6">
                             <div class="card h-100 project-card fade-in">
-                                <a href="https://lamaisondelha.alwaysdata.net/" class="project-image-link">
+                                <a href="https://lamaisondelha.alwaysdata.net/" target="_blank" class="project-image-link">
                                     <img src="public/assets/img/projects/maison-elha.png" class="card-img-top project-image"
                                         alt="La maison d'ElHa">
                                 </a>
                                 <div class="card-body">
-                                    <a href="https://lamaisondelha.alwaysdata.net/" class="project-title text-decoration-none">
+                                    <a href="https://lamaisondelha.alwaysdata.net/" target="_blank" class="project-title text-decoration-none">
                                         <h5 class="card-title">La maison d'ElHa</h5>
                                     </a>
                                     <div class="project-tags mb-3">
@@ -442,12 +481,12 @@
                         <!-- Projet 2 -->
                         <div class="col-lg-4 col-md-6">
                             <div class="card h-100 project-card fade-in">
-                                <a href="https://el-idrissi.alwaysdata.net/" class="project-image-link">
+                                <a href="https://el-idrissi.alwaysdata.net/" target="_blank" class="project-image-link">
                                     <img src="public/assets/img/projects/jeu-pendu.png" class="card-img-top project-image"
                                         alt="Le jeu du pendu">
                                 </a>
                                 <div class="card-body">
-                                    <a href="https://el-idrissi.alwaysdata.net/" class="project-title text-decoration-none">
+                                    <a href="https://el-idrissi.alwaysdata.net/" target="_blank" class="project-title text-decoration-none">
                                         <h5 class="card-title">Le jeu du pendu</h5>
                                     </a>
                                     <div class="project-tags mb-3">
