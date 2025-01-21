@@ -11,7 +11,11 @@ RUN apt-get update && \
 COPY . /var/www/html
 
 # Exposer le port 80 pour Apache
+ENV PORT=80
 EXPOSE 80
+
+# Remplacer le port d'écoute d'Apache par celui défini par Railway
+RUN sed -i "s/Listen 80/Listen \$PORT/" /etc/apache2/ports.conf
 
 # Lancer Apache au démarrage du conteneur
 CMD ["apache2-foreground"]
