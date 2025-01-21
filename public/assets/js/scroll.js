@@ -35,34 +35,23 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 
-    // Smooth scroll pour les liens d'ancrage
-    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    //     anchor.addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         const target = document.querySelector(this.getAttribute('href'));
-
-    //         if (target) {
-    //             const headerOffset = 80;
-    //             const elementPosition = target.getBoundingClientRect().top;
-    //             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-    //             window.scrollTo({
-    //                 top: offsetPosition,
-    //                 behavior: 'smooth'
-    //             });
-    //         }
-    //     });
-    // });
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            // Vérifier si l'attribut href pointe vers un sélecteur valide
             const hrefValue = this.getAttribute('href');
-            if (hrefValue && hrefValue !== '#') {
+
+            // Si le lien est uniquement "#", remonte directement en haut
+            if (hrefValue === '#' || hrefValue === '#top') {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else if (hrefValue && hrefValue !== '#') {
+                // Autres liens vers des ancres spécifiques
+                e.preventDefault();
                 const target = document.querySelector(hrefValue);
                 if (target) {
-                    const headerOffset = 80;
+                    const headerOffset = 80; // Décalage pour une navbar fixe
                     const elementPosition = target.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

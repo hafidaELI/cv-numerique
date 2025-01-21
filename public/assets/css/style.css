@@ -25,6 +25,11 @@ body {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Défilement fluide pour une meilleure UX */
+}
+
 /***********************************************
 NAVBAR
 ***********************************************/

@@ -31,7 +31,7 @@ function shareProfile() {
         navigator.share({
             title: 'Mon Profil',
             text: 'Découvrez mon profil !',
-            url: google.fr, // Partage le lien actuel
+            url: 'http://localhost:8080/', // Partage le lien actuel
         }).then(() => {
             console.log('Profil partagé avec succès !');
         }).catch((error) => {
@@ -42,11 +42,3 @@ function shareProfile() {
     }
 }
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const modal = document.getElementById('contactModal');
-
-//     modal.addEventListener('show.bs.modal', () => console.log('Modal ouverte'));
-//     modal.addEventListener('shown.bs.modal', () => console.log('Modal affichée'));
-//     modal.addEventListener('hide.bs.modal', () => console.log('Modal en train de se fermer'));
-//     modal.addEventListener('hidden.bs.modal', () => console.log('Modal fermée'));
-// });

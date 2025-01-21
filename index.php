@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="public/assets/css/style.css">
     <link rel="stylesheet" href="public/assets/css/animations.css">
     <link rel="stylesheet" href="public/assets/css/sections.css">
+    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/icons/favicon.ico">
 </head>
 
-<body>
+<body id="top">
     <!-- Navbar Desktop -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom d-none d-lg-flex fixed-top">
         <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="#top">
                 <img src="public/assets/img/about/hei-logo.png" alt="Logo de Hafida EL IDRISSI" class="logo rounded">
             </a>
 
@@ -78,7 +79,7 @@
         <nav class="navbar bg-light fixed-top">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#top">
                     <img src="public/assets/img/about/hei-logo.png" alt="Logo de Hafida EL IDRISSI"
                         class="logo rounded">
                 </a>
@@ -500,14 +501,14 @@
                         </div>
 
                         <!-- Projet 3 -->
-                        <div class="col-lg-4 col-md-6">
+                        <!-- <div class="col-lg-4 col-md-6">
                             <div class="card h-100 project-card fade-in">
                                 <a href="https://votre-lien-3.com" class="project-image-link">
                                     <img src="public/assets/img/projects/jeu-yams.png" class="card-img-top project-image"
                                         alt="Le jeu Yams">
                                 </a>
                                 <div class="card-body">
-                                    <a href="https://votre-lien-3.com" class="project-title text-decoration-none">
+                                    <a href="https://lien-3.com" class="project-title text-decoration-none">
                                         <h5 class="card-title">Le jeu Yams</h5>
                                     </a>
                                     <div class="project-tags mb-3">
@@ -518,7 +519,7 @@
                                     <p class="card-text">Description du troisième projet</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Projet 4 -->
                         <!-- <div class="col-lg-4 col-md-6">
                         <div class="card h-100 project-card fade-in">
