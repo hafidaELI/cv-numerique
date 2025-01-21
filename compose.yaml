@@ -1,11 +1,10 @@
 version: '3.8'
-
 services:
   web:
     build:
       context: .
     ports:
-      - "${PORT:-8080}:80" # Expose le conteneur dynamiquement avec Railway (ou par défaut 8080 en local)
+      - "8080:80" # Expose le conteneur sur le port 8080
     volumes:
       - ./:/var/www/html # Montez le code source pour le développement
     container_name: mon-cv-numerique
