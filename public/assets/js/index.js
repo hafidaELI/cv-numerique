@@ -31,7 +31,7 @@ function shareProfile() {
         navigator.share({
             title: 'Mon Profil',
             text: 'Découvrez mon profil !',
-            url: 'www.elidrissi-hafida.com',
+            url: 'https://www.elidrissi-hafida.com',
         }).then(() => {
             console.log('Profil partagé avec succès !');
         }).catch((error) => {
