@@ -389,7 +389,7 @@
                         <div class="formation-content">
                             <h4>Université de Picardie Jules Verne (UPJV)</h4>
                             <p>Licence professionnelle Banque, Assurance, Finance en alternance au CFNE</p>
-                            <span class="formation-date">Sept. 2011 - Juil. 2014</span>
+                            <span class="formation-date">Sept. 2015 - Juil. 2016</span>
                         </div>
                     </div>
 
@@ -411,7 +411,7 @@
                         <div class="formation-content">
                             <h4>Lycée Madeleine Michelis - Amiens</h4>
                             <p>Baccalauréat Économique et Sociales - Spé Sciences Économiques et Sociales</p>
-                            <span class="formation-date">Sept. 2011 - Juil. 2014</span>
+                            <span class="formation-date">Sept. 2010 - Juil. 2011</span>
                         </div>
                     </div>
                 </div>
