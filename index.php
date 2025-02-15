@@ -194,13 +194,13 @@
                                                 <a href="mailto:elidrissi-hafida@hotmail.fr" class="text-decoration-none">elidrissi-hafida@hotmail.fr</a>
                                             </div>
                                         </li>
-                                        <li class="mb-3">
+                                        <!-- <li class="mb-3">
                                             <div class="d-flex align-items-center mb-2">
                                                 <i class="fa-regular fa-calendar fs-5 me-3 text-secondary"></i>
                                                 <span class="fw-bold">Anniversaire</span>
                                             </div>
                                             <div class="ps-4 text-start">Décembre 1992</div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <div class="modal-footer">
