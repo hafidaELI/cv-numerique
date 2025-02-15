@@ -226,7 +226,7 @@
                                 </li>
                                 <!-- Télécharger le PDF -->
                                 <li>
-                                    <a class="dropdown-item" href="/public/assets/cv/cv-elidrissi-hafida.pdf" target="_blank"> <i class="fa-solid fa-download"></i> Enregistrer au format PDF</a>
+                                    <a class="dropdown-item" href="/public/assets/cv/cv-hafida-elidrissi.pdf" target="_blank"> <i class="fa-solid fa-download"></i> Enregistrer au format PDF</a>
                                 </li>
                             </ul>
                         </div>
@@ -585,7 +585,7 @@
         </div>
         <!-- Section droite (Imprimante et Message) -->
         <div class="d-flex align-items-center">
-            <a href="/public/assets/cv/cv-elidrissi-hafida.pdf" target="_blank" class="footer-icon mx-2">
+            <a href="/public/assets/cv/cv-hafida-elidrissi.pdf" target="_blank" class="footer-icon mx-2">
                 <i class="fas fa-print"></i>
             </a>
             <a href="mailto:elidrissi-hafida@hotmail.fr" class="footer-icon mx-2">
