@@ -149,7 +149,7 @@
             <div class="profile-wrapper">
                 <div class="profile-container">
                     <div class="profile-badge">
-                        <img src="public/assets/img/about/profil-img-opentowork.png" alt="Photo de profil" class="profile-pic">
+                        <img src="public/assets/img/about/profil-img-opentowork2.png" alt="Photo de profil" class="profile-pic">
                     </div>
                 </div>
                 <!-- Informations de profil -->
@@ -368,7 +368,7 @@
                         <div class="formation-content">
                             <h4>La Manu - École Supérieure des Métiers du Numérique</h4>
                             <p>Concepteur développeur d'application - Titre professionnel (TP) de niveau 6</p>
-                            <span class="formation-date">Mars 2025 - Juin. 2026</span>
+                            <span class="formation-date">Sept. 2025 - Déce. 2026</span>
                         </div>
                     </div>
                     <div class="formation-item fade-in">
