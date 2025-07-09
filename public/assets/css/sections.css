@@ -1,3 +1,8 @@
+/******************************* A PROPOS *******************************************/
+.text-justified {
+    text-align: justify;
+}
+
 /***************************** Section Compétences *********************************/
 .competences-grid {
     display: grid;

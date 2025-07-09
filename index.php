@@ -155,7 +155,8 @@
                 <!-- Informations de profil -->
                 <div class="profile-info">
                     <h1>Hafida EL IDRISSI</h1>
-                    <h2>Développeuse Web en devenir</h2>
+                    <!-- <h2>Développeuse Web en devenir</h2> -->
+                    <h2>Profil hybride : Commerce & Tech | Ingénieure d’Affaires en formation</h2>
                     <p>Amiens-Lille-Paris · <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Coordonnées</a></p>
                     <!-- Modal Bootstrap -->
                     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -226,7 +227,7 @@
                                 </li>
                                 <!-- Télécharger le PDF -->
                                 <li>
-                                    <a class="dropdown-item" href="/public/assets/cv/cv-hafida-elidrissi.pdf" target="_blank"> <i class="fa-solid fa-download"></i> Enregistrer au format PDF</a>
+                                    <a class="dropdown-item" href="/public/assets/cv/cv-elidrissi-hafida.pdf" target="_blank"> <i class="fa-solid fa-download"></i> Enregistrer au format PDF</a>
                                 </li>
                             </ul>
                         </div>
@@ -239,10 +240,11 @@
         <div class="container my-5">
             <div class="row">
                 <!-- Colonne "À propos" -->
-                <div class="col-lg-8 col-md-7 col-sm-12">
+                <div class="col-lg-8 col-md-7 col-sm-12 text-justified">
                     <section id="about-content" class="content-section p-4">
                         <h3>À propos</h3>
-                        <p>
+                        <!-- PROJET DEV -->
+                        <!-- <p>
                             Après plus de 9 ans dans le secteur bancaire, j’ai choisi de me réinventer en me lançant
                             dans le
                             développement web : une reconversion qui m’a permis de canaliser ma curiosité et mon
@@ -263,7 +265,30 @@
                             concevoir des solutions fonctionnelles et esthétiques : Hâte de partager cette aventure
                             avec
                             vous !
+                        </p> -->
+                        <!-- PROJET MASTER -->
+                        <!-- <p>
+                            Après 9 années d’expérience dans la relation client bancaire, j’ai choisi de redonner un nouvel élan à mon parcours en me rapprochant des enjeux du numérique et du développement commercial BtoB.
                         </p>
+                        <p>
+                            Mon moteur ? Comprendre, créer, et me challenger.
+                        </p>
+                        <p>
+                            Curieuse et déterminée, j’ai d’abord entrepris une reconversion dans le développement web afin d’explorer les dimensions techniques du digital de l’intérieur. Cette immersion m’a permis d’acquérir une vraie culture tech, et de renforcer ma capacité à dialoguer avec des équipes techniques comme des interlocuteurs métier.
+                        </p>
+                        <p>
+                            Aujourd’hui, j’ai pour ambition de mettre à profit cette double compétence – commerciale et numérique – dans des environnements complexes à forte valeur ajoutée. C’est dans cette optique que je poursuis actuellement un <strong>Mastère Ingénieur d’Affaires & Business Developer – spécialisation Hautes Technologies.</strong>
+                        </p>
+                        <p>
+                            Mon objectif : accompagner les entreprises dans leur transformation et leur croissance en alliant sens du conseil, compréhension des enjeux techniques, et performance commerciale.
+                        </p> -->
+                        <p>Après plus de 9 ans dans la relation client bancaire, j’ai choisi de me réinventer en explorant le monde du numérique. J’ai entamé une reconversion dans le développement web pour comprendre les solutions de l’intérieur, et nourrir ma curiosité pour les environnements techniques.</p>
+
+                        <p>Cette immersion m’a permis de développer une vraie culture digitale, une capacité à dialoguer avec les équipes techniques, et une envie encore plus forte d’évoluer dans des projets à forte valeur ajoutée. Aujourd’hui, je poursuis un <strong>Mastère Ingénieur d’Affaires & Business Developer en Hautes Technologies</strong> chez Euridis pour allier sens du relationnel, compréhension technique et performance commerciale.</p>
+
+                        <p>Mon moteur : comprendre, créer, me challenger.
+                            Curieuse, structurée et investie, j’aime évoluer dans des environnements exigeants, où rigueur et créativité vont de pair.
+                            Ce qui m’anime, c’est d’apporter des solutions utiles, construire des liens de confiance et progresser au contact des autres.</p>
                     </section>
                 </div>
                 <!-- Colonne "Autre" -->
@@ -361,7 +386,7 @@
                             <span class="formation-date">Janv. 2025 - Sept. 2025</span>
                         </div>
                     </div> -->
-                    <div class="formation-item fade-in">
+                    <!-- <div class="formation-item fade-in">
                         <div class="formation-logo">
                             <img src="public/assets/img/logos/lamanu.png" alt="la Manu">
                         </div>
@@ -369,6 +394,16 @@
                             <h4>La Manu - École Supérieure des Métiers du Numérique</h4>
                             <p>Concepteur développeur d'application - Titre professionnel (TP) de niveau 6</p>
                             <span class="formation-date">Sept. 2025 - Déce. 2026</span>
+                        </div>
+                    </div> -->
+                    <div class="formation-item fade-in">
+                        <div class="formation-logo">
+                            <img src="public/assets/img/logos/euridis.png" alt="Euridis Business School">
+                        </div>
+                        <div class="formation-content">
+                            <h4>Euridis Business School</h4>
+                            <p>Mastère Ingénieur d’Affaires et Business Developer en Hautes Technologies</p>
+                            <span class="formation-date">Oct. 2025 - Oct. 2027</span>
                         </div>
                     </div>
                     <div class="formation-item fade-in">
@@ -388,7 +423,7 @@
                         </div>
                         <div class="formation-content">
                             <h4>Université de Picardie Jules Verne (UPJV)</h4>
-                            <p>Licence professionnelle Banque, Assurance, Finance en alternance au CFNE</p>
+                            <p>Licence professionnelle Banque, Assurance, Finance en alternance au CMNE</p>
                             <span class="formation-date">Sept. 2015 - Juil. 2016</span>
                         </div>
                     </div>
@@ -585,7 +620,7 @@
         </div>
         <!-- Section droite (Imprimante et Message) -->
         <div class="d-flex align-items-center">
-            <a href="/public/assets/cv/cv-hafida-elidrissi.pdf" target="_blank" class="footer-icon mx-2">
+            <a href="/public/assets/cv/cv-elidrissi-hafida.pdf" target="_blank" class="footer-icon mx-2">
                 <i class="fas fa-print"></i>
             </a>
             <a href="mailto:elidrissi-hafida@hotmail.fr" class="footer-icon mx-2">
